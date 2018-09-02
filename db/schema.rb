@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_31_002316) do
+ActiveRecord::Schema.define(version: 2018_09_01_181222) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2018_08_31_002316) do
 
   create_table "websites", force: :cascade do |t|
     t.string "url"
-    t.boolean "indexed"
+    t.boolean "indexed", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
