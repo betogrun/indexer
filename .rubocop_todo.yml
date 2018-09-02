@@ -70,18 +70,7 @@ Style/ClassAndModuleChildren:
 
 # Offense count: 9
 Style/Documentation:
-  Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'app/controllers/application_controller.rb'
-    - 'app/mailers/application_mailer.rb'
-    - 'app/models/application_record.rb'
-    - 'app/models/tag.rb'
-    - 'app/models/website.rb'
-    - 'config/application.rb'
-    - 'config/initializers/rack_attack.rb'
-    - 'db/migrate/20180830105245_create_websites.rb'
-    - 'db/migrate/20180831002316_create_tags.rb'
+  Enabled: false
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -144,3 +133,6 @@ Style/WordArray:
 # URISchemes: http, https
 Metrics/LineLength:
   Max: 112
+
+Metrics/BlockLength:
+  Max: 60

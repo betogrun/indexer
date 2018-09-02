@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Api::V1::Websites", type: :request do
+RSpec.describe 'Api::V1::Websites', type: :request do
   describe 'GET /api/v1/websites' do
     before do
       @stored_websites = [
@@ -15,12 +15,12 @@ RSpec.describe "Api::V1::Websites", type: :request do
     it 'returns stored websites and its tags' do
       @stored_websites.each_with_index do |website, index|
         expect(json_response[:data][index]).to(
-          include({ id: website.id.to_s, attributes: {url: website.url, indexed: website.indexed } })
+          include(id: website.id.to_s, attributes: { url: website.url, indexed: website.indexed })
         )
         website.tags.each do |tag|
           expect(
             json_response[:included].any? do |json|
-              json >= {id: tag.id.to_s, attributes: {name: tag.name, content: tag.content}}
+              json >= { id: tag.id.to_s, attributes: { name: tag.name, content: tag.content } }
             end
           ).to eq(true)
         end
@@ -31,9 +31,9 @@ RSpec.describe "Api::V1::Websites", type: :request do
   describe 'POST /api/v1/websites' do
     before do
       @params = {
-      data: {
-        type: 'websites',
-        attributes: { url: 'http://albertorocha.me' }
+        data: {
+          type: 'websites',
+          attributes: { url: 'http://albertorocha.me' }
         }
       }
       post '/api/v1/websites', params: @params.to_json, headers: headers
