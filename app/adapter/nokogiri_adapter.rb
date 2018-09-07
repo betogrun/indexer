@@ -20,6 +20,6 @@ class NokogiriAdapter
   private
 
   def document
-    document ||= Nokogiri::HTML(open(url))
+    @document ||= Nokogiri::HTML(URI.parse(url).open)
   end
 end
