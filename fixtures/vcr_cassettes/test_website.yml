@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://alberto-rocha.neocities.org/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 09 Sep 2018 13:43:07 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Last-Modified:
+      - Sun, 09 Sep 2018 01:00:27 GMT
+      Etag:
+      - W/"5b9470ab-364"
+      X-Ipfs-Path:
+      - "/ipns/alberto-rocha.neocities.org"
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      Content-Security-Policy:
+      - 'upgrade-insecure-requests; default-src ''unsafe-inline'' ''unsafe-eval''
+        ''self'' data: blob: *'
+      X-Neocities-Cdn:
+      - cdn-sgp
+      Upgrade-Insecure-Requests:
+      - '1'
+      X-Cached:
+      - HIT
+    body:
+      encoding: ASCII-8BIT
+      string: "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>The
+        web site of alberto-rocha</title>\n    <!-- The style.css file allows you
+        to change the look of your web pages.\n         If you include the next line
+        in all your web pages, they will all share the same look.\n         This makes
+        it easier to make new pages for your site. -->\n    <link href=\"/style.css\"
+        rel=\"stylesheet\" type=\"text/css\" media=\"all\">\n  </head>\n  <body>\n
+        \   <h1>Welcome to my Website!</h1>\n    \n    <h2>This is a h2 header</h2>\n
+        \   \n    <h3>This is a simple h3 header</h3>\n    \n    <h2>This is another
+        h2 header</h2>\n    \n    <h3>This is also a h3 header</h3>\n    \n    <p>This
+        is my personal blog: <a href=\"https://blog.albertorocha.me\">Notes from a
+        coder</a></p>\n    \n    <p>This is my <a href=\"https://www.linkedin.com/in/betogrun/\">LinkedIn
+        profile</a></p>\n  \n  </body>\n</html>\n"
+    http_version: 
+  recorded_at: Sun, 09 Sep 2018 13:43:07 GMT
+recorded_with: VCR 4.0.0
