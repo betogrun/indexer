@@ -99,7 +99,7 @@ Transfer-Encoding: chunked
 
 ### List stored websites' page content
 
-## Only websites
+#### Only websites
 
 To query all websites
 
@@ -107,13 +107,15 @@ To query all websites
 curl -i -H "Accept: application/vnd.api+json" "http://localhost:3000/api/v1/websites"
 ```
 
-## Website with the stored tags
+#### Website with the stored tags
 
 To retrieve all websites with the content of its tags
 
 ```
 curl -i -H "Accept: application/vnd.api+json" "http://localhost:3000/api/v1/websites?include=tags"
 ```
+
+More options about query and pagination can be found in this [reference](https://github.com/cerebris/jsonapi-resources/wiki/JSONAPI::Resources-Querystring-Examples)
 
 ## Built With
 
