@@ -11,8 +11,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
 ```
 Ruby 2.4.0
 Rails 5.2.1
@@ -26,8 +24,7 @@ Follow the steps below to get a development environment running
 Clone the project
 
 ```
-$ git clone git@github.com:betogrun/indexer.git
-$ cd indexer
+$ git clone git@github.com:betogrun/indexer.git && cd indexer
 ```
 
 Install the dependencies
@@ -63,6 +60,7 @@ $ rubocop -a
 ```
 
 ## Usage
+
 This API provide two endpoints: 
   * Create (store) a website's page content
   * List all the stored websites (with or without its content)
