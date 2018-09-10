@@ -2,6 +2,7 @@
 
 Indexer is small RESTful Json API that can index website's page, i.e. parser and store its content.
 Given a valid URL address, Indexer will get the contents of the tags h1, h2 and h3 and the URL address from the links.
+
 [![Build Status](https://travis-ci.org/betogrun/indexer.svg?branch=master)](https://travis-ci.org/betogrun/indexer)
 
 ## Getting Started
