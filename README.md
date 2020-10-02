@@ -12,8 +12,8 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 ```
-Ruby 2.4.0
-Rails 5.2.1
+Ruby 2.6.1
+Rails 5.2.git@github.com:betogrun/indexer.git4
 Postgres 9.2+
 ```
 
